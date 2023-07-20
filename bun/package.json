@@ -1,0 +1,8 @@
+{
+  "name": "bun",
+  "module": "index.js",
+  "dependencies": {
+    "elysia": "^0.5.23"
+  },
+  "type": "module"
+}
