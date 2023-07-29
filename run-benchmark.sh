@@ -3,7 +3,7 @@
 base_url="http://localhost:5000/"
 array_param=${2:-""} 
 url=$base_url$array_param
-duration="10s"
+duration="30s"
 threads="12"
 connections="400"
 
@@ -53,7 +53,7 @@ run_test () {
 
   sleep 5
 
-  wrk -t$threads -c$connections -d$duration $url > /dev/null
+  wrk -t$threads -c$connections -d10s $url > /dev/null
 
   run_benchmark $test_name
 
